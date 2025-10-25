@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUGUST NIGHT</title>
+    <style>
+        body {
+            background-color: rgb(8, 8, 67);
+            text-align: center;
+            font-size: medium;
+            color: white; 
+        }
+
+        img {
+            width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: rgb(255, 221, 119);
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(255, 221, 119);
+            color: rgb(8, 8, 67);
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: rgb(7, 26, 122);
+        }
+            #answer {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>AUGUST NIGHT</h1>
+    <p>One August night was the greatest beginning in my life.</p>
+
+    <img src="download (6).jpeg" alt="The moon and the sun meeting was in August">
+    <p>The moon and the sun meeting was in August.</p>  <h4>wanna be with me in every August?</h4>
+
+    <button onclick="showAnswer('yes')">yes</button>
+    <button onclick="showAnswer('YES')">YES</button> 
+     <p id="answer"></p>
+
+    
+
+
+    
+         <script>
+        function showAnswer(choice) {
+            let text = "";
+            if (choice === "yes") {
+                text = `Yaaaay! You are mine now <br>
+                <a href="https://open.spotify.com/track/7BjZD4TVbmqNAJpEbvS6By?si=1272ac4f51c84867"> Click here for our song MY METO</a>`;
+            } else {
+                text = "You are always mine ";
+            }
+            document.getElementById("answer").innerHTML = text;
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
